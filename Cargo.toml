@@ -1,0 +1,20 @@
+[package]
+name = "env_config"
+version = "0.1.0"
+authors = ["Redblueflame <contact@redblueflame.com>"]
+edition = "2018"
+publish = false
+
+[workspace]
+
+[[bin]]
+name = "workshop"
+path = "main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proc_config = { path = "proc_config" }
+proc_config_derive = { path = "proc_config_derive" }
+serde = {version = "1.0.125", features = ["derive"]}
+toml = "0.5.8"
